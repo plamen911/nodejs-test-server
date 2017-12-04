@@ -1,5 +1,5 @@
 # nodejs-test-server
-Test NodeJS server for the Angular Fundamentals – November 2017 course final project@SoftUni
+Test NodeJS server for the Angular Fundamentals – November 2017@SoftUni course final project
 
 Service end point: http://138.68.111.47:5000/
 
