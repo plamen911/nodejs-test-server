@@ -7,3 +7,9 @@ https://www.npmjs.com/package/pm2
 pm2 list
 pm2 reload all
 ```
+
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
