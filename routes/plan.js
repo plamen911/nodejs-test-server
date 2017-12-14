@@ -2,6 +2,9 @@ const planner = require('../data/planner');
 
 module.exports = {
     postPlan: (req, res) => {
+
+
+
         const plan = req.body;
         if (!plan.year) {
             plan.year = Number(req.params.year);

@@ -16,7 +16,7 @@ module.exports = new PassportLocalStrategy({
   let savedUser = usersData.findByEmail(email)
 
   if (!savedUser) {
-    const error = new Error('Incorrect email or password')
+    const error = new Error('Incorrect email or password / ' + email)
     error.name = 'IncorrectCredentialsError'
 
     return done(error)
@@ -38,7 +38,10 @@ module.exports = new PassportLocalStrategy({
   // create a token string
   const token = jwt.sign(payload, 's0m3 r4nd0m str1ng')
   const data = {
-    name: savedUser.name
+    id: savedUser.id,
+    name: savedUser.name,
+    email: savedUser.email,
+    isAdmin: savedUser.isAdmin
   }
 
   return done(null, token, data)

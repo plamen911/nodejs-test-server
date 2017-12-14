@@ -14,6 +14,7 @@
     "jsonwebtoken": "7.4.1",
     "passport": "0.3.2",
     "passport-local": "1.0.0",
+    "randomstring": "^1.1.5",
     "validator": "7.2.0"
   }
 }
